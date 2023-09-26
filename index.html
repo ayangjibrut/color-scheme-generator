@@ -10,23 +10,62 @@
         <title>Color Scheme Generator</title>
     </head>
     <body>
-        <header>
-            <input type="color" id="color-picker">
-            <select name="values" id="drop-down-menu">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome Dark</option>
-                <option value="monochrome-light">Monochrome Light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic Complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
-            <button id="get-color-scheme">Get Color Scheme</button>
-        </header>
-        <section>
-
-        </section>
+        <div class="container">
+            <header>
+                <h1>Color Scheme</h1>
+                <P>A tool to make it easy to pick your colors.</P>
+            </header>
+    
+            <section>
+                <input type="color" value="#3377FF" id="color-picker">
+                <select name="values" id="drop-down-menu">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic" selected>Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button id="get-color-scheme">Get Color Scheme</button>
+            </section>
+    
+            <main>
+                <div class="color-container">
+                    <div class="color-scheme">
+                        <div class="color color1" id="column0"></div>
+                        <div class="color-hex" id="row0">
+                            <p>#2C70FA</p>
+                        </div>
+                    </div>
+                    <div class="color-scheme">
+                        <div class="color color2" id="column1"></div>
+                        <div class="color-hex" id="row1">
+                            <p>#3036FB</p>
+                        </div>
+                    </div>
+                    <div class="color-scheme">
+                        <div class="color color3" id="column2"></div>
+                        <div class="color-hex" id="row2">
+                            <p>#6934FC</p>
+                        </div>
+                    </div>
+                    <div class="color-scheme">
+                        <div class="color color4" id="column3"></div>
+                        <div class="color-hex" id="row3">
+                            <p>#A738FD</p>
+                        </div>
+                    </div>
+                    <div class="color-scheme">
+                        <div class="color color5" id="column4"></div>
+                        <div class="color-hex" id="row4">
+                            <p>#E43CFE</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
         <script src="script.js"></script>
     </body>

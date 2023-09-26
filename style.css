@@ -7,4 +7,112 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container,
+section,
+.color-container {
+    display: flex;
+    justify-content: center;
+}
+
+section,
+.color-container {
+    align-items: center;
+}
+
+.container {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: .85rem;
+}
+
+section {
+    padding-bottom: 1.5em;
+}
+
+input,
+select,
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input {
+    width: 55px;
+    height: 45px;
+    background: none;
+}
+
+select {
+    margin: 0 1em;
+    height: 40px;
+}
+
+button {
+    background-color: white;
+    height: 40px;
+    padding: .5em;
+}
+
+.color-container {
+    flex-direction: row;
+}
+
+.color-scheme {
+    width: 100%;
+}
+
+.color {
+    height: 400px;
+}
+
+.color1 {
+    background-color: #2C70FA;
+}
+
+.color2 {
+    background-color: #3036FB;
+}
+
+.color3 {
+    background-color: #6934FC;
+}
+
+.color4 {
+    background-color: #A738FD;
+}
+
+.color5 {
+    background-color: #E43CFE;
+}
+
+.color-hex {
+    text-align: center;
+    font-size: .7rem;
+    padding: .8em 0;
+    background-color: white;
+}
+
+.color-hex p {
+    font-size: .7rem;
+}
+
+.color-hex:hover {
+    background-color: #e1e1e1;
 }
